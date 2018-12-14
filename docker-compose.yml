@@ -2,7 +2,5 @@ version: '2.0'
 services:
   xml2pdf:
     build: .
-    volumes:
-      - '/tmp/xml2pdf:/tmp/xml2pdf'
     ports:
       - '2295:2295'
