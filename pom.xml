@@ -6,7 +6,7 @@
 
     <groupId>groupId</groupId>
     <artifactId>xml-to-pdf</artifactId>
-    <version>0.0.1-beta.0</version>
+    <version>1.0.0</version>
 
     <dependencies>
         <dependency>
