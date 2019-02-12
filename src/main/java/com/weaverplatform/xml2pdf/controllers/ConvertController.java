@@ -20,7 +20,7 @@ public class ConvertController {
     File tmpDir = new File(tmpLocation, UUID.randomUUID().toString());
     tmpDir.mkdirs();
 
-    MultipartConfigElement multipartConfigElement = new MultipartConfigElement(tmpDir.getAbsolutePath());
+    MultipartConfigElement multipartConfigElement = new MultipartConfigElement(tmpDir.getAbsolutePath(), -1, -1, -1);
     req.raw().setAttribute("org.eclipse.jetty.multipartConfig", multipartConfigElement);
     Part file = req.raw().getPart("file");
 
